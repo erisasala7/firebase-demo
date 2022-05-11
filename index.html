@@ -1,0 +1,32 @@
+<html>
+<title>Firebase Messaging Demo</title>
+<style>
+    div {
+        margin-bottom: 15px;
+    }
+</style>
+
+<body>
+    <div id="token"></div>
+    <div id="msg"></div>
+    <div id="notis"></div>
+    <div id="err"></div>
+    <script>
+        MsgElem = document.getElementById("msg")
+        TokenElem = document.getElementById("token")
+        NotisElem = document.getElementById("notis")
+        ErrElem = document.getElementById("err")
+        var config = {
+            apiKey: "AIzaSyCOyxJJ-lfFCAhUbv_TMhbVDoMe_APv2rM",
+            authDomain: "pwapush-3ace0.firebaseapp.com",
+            projectId: "pwapush-3ace0",
+            storageBucket: "pwapush-3ace0.appspot.com",
+            messagingSenderId: "301841775656",
+            appId: "1:301841775656:web:09eb62b4afdbb71925091d",
+            measurementId: "G-4YJMC7PN17"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+
+</html>
