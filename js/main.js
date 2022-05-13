@@ -1,4 +1,4 @@
-const authentification = firebase.default.auth();
+const authentification = firebase.auth();
 const message = firebase.messaging();
 
 authentification.onAuthStateChanged(handleAuthentificationEvent);
