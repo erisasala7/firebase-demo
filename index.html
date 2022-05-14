@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Simply Notify</title>
+    <title>Push Notification with Firebase Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'></script>
     <link rel="stylesheet" href="https://erisasala7.github.io/firebase-demo//css/reset.css">
@@ -13,22 +13,12 @@
 <body>
     <div class="wrapper">
         <main>
-            <header>
-                <h1>Simply Notify</h1>
-                <p><em>A simple application to send notifications to everyone subscribed. It's simple. It's useless. It's simply notify.</em></p>
-            </header>
-
-            <!-- Content goes here -->
-            <button id="sign_in_btn" onclick="signInFunction()">Sign in</button>
-            <button id="sign_out_btn" onclick="signOutFunction()" hidden>Sign Out</button>
             <button id="sub_btn" onclick="subscribeFunction()">Subscribe</button>
             <button id="unsub_btn" onclick="unsubscribeFunction()" hidden>Unsubscribe</button>
 
         </main>
 
-        <footer>
-            <small><a href="">View Source</a></small>
-        </footer>
+
     </div>
 
     <!-- Firebase SDK -->

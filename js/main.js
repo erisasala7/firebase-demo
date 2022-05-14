@@ -1,27 +1,6 @@
 const authentification = firebase.auth();
 const message = firebase.messaging();
 
-authentification.onAuthStateChanged(handleAuthentificationEvent);
-
-function signInFunction() {
-    authentification.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-}
-
-function signOutFunction() {
-    authentification.signOut();
-}
-
-function handleAuthentificationEvent(usr) {
-    if (usr) {
-        console.log(usr);
-        document.getElementById('sign_in_btn').setAttribute("hidden", "true");
-        document.getElementById('sign_out_btn').removeAttribute("hidden");
-    } else {
-        console.log(usr);
-        document.getElementById('sign_out_btn').setAttribute("hidden", "true");
-        document.getElementById('sign_in_btn').removeAttribute("hidden");
-    }
-}
 
 var tokenList = [{
     token: "token",
