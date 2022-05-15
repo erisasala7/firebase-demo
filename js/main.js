@@ -14,8 +14,7 @@ function subscribeFunction() {
             console.log(token)
             alert(token);
             tokenList.push({
-                token: token,
-                uid: authentification.currentUser.uid
+                token: token
             });
             console.log(tokenList)
         })
